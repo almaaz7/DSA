@@ -20,11 +20,10 @@ int solve(vector<int> &arr)
 //brute force
 
 int solve3(vector<int> arr){
-    int sum =0;
     int maxi = INT_MIN;
     for(int i=0;i<arr.size();i++){
         for(int j =i;j<arr.size();j++){
-            sum = 0;
+            int sum = 0;
             for(int k=i;k<j;k++){
                 sum = sum + arr[k]; 
                 maxi = max(sum,maxi);  
